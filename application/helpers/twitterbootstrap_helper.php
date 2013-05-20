@@ -52,13 +52,15 @@ if ( !function_exists('radioButton')){
 if ( !function_exists('checkBox')){
     function checkBox($id, $data, $type = ''){
         if (!empty ($id)){
-            $sop  = '<input type="text" name="'.$id.'" id="'.$id.'"  ng-model="'.$id.'" ng-init="'.$id.' = \'\'">
+            $sop  =' ';
+
+            $sop  .= '<input type="text" name="'.$id.'" id="'.$id.'"  ng-model="'.$id.'" ng-init="'.$id.' = \'\'">
                      <div class="btn-group " data-toggle="buttons-checkbox">';
             
             $type = !empty ($type) ? ' btn-'. $type : '';
             
             foreach($data as $f){
-            $sop .= '<button type="button" class="btn'.$type.'" ng-click="'.$id.' = '.$id.' + \''.$f['id'].', \'">'.$f['title'].'</button>';
+            $sop .= '<button type="button" class="btn'.$type.'" ng-click="'.$id.' = checkbox('.$f['id'].')">'.$f['title'].'</button>';
             }
             $sop .= '</div>';
             return ($sop);
