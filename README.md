@@ -1,7 +1,8 @@
 bootstrap_ci
 ============
 
-Twitter bootstrap, Javascript Angularjs and Codeigniter
+This CI helper library is developed for php developers who dont wants to invest there time in html & javascript development.
+Bootstrap Helpper will create html from provided php data, easy to implement and use. I hope this will help you in your development. I am working on the updated version of the bootstrap so that you can use bootstrap v3.0 and updated angularjs version.
 
 
 
